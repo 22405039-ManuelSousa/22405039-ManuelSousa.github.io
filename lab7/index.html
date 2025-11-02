@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Loja</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#cesto">Cesto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Selecione os seus Produtos</h2>
+
+     <div>
+        <label for="filtro">Filtrar</label>
+        <select id="filtro">
+          <option value="">Todas as categorias</option>
+        </select>
+
+      <label for="ordenar">Ordenar</label>
+  <select id="ordenar">
+    <option value="">Sem ordenação</option>
+    <option value="desc">Preço decrescente</option>
+     <option value="asc">Preço crescente</option>
+  </select>
+
+  <label for="procurar">Procurar</label>
+    <input type="text" id="procurar">
+
+
+</div>
+
+      <div id="lista-produtos"></div>
+    </section>
+
+<div id="produtos"></div>
+
+    <section id="cesto">
+      <h2>Meu Cesto</h2>
+      <div id="lista-cesto"></div>
+
+      <div id="cesto-total">
+        <p><strong>Preco total:</strong> <span id="total-preco">0 €</span></p>
+
+        <label>
+            <input type="checkbox" id="estudante" >
+              És estudante do DEISI?
+         </label>
+         
+         <label for="cupao">Cupão de desconto:</label>
+         <input type="text" id="cupao">
+
+         <button id="comprar">Comprar</button>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>DIW</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
